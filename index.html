@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                container: {
+                    center: true,
+                    padding: {
+                        DEFAULT: "1rem",
+                        sm: 0,
+                    }
+                },
+                fontFamily: {
+                    sans: ["Playfair Display"],
+                    serif: ["Great Vibes"],
+                    mono: ["Dancing Script"],
+                },
+                extend: {
+                    colors: {
+                        black: "#0c0a09",
+                        white: "#f8fafc",
+                        purple: "#e9d5ff",
+                        violet: "#c4b5fd",
+                        fuchsia: "#f0abfc",
+                        pink: "#f9a8d4",
+                        rose: "#fda4af",
+                        cream: "#fdba74",
+                        yellow: "#fef08a",
+                        sky: "#7dd3fc",
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/icons/download (1).png" type="image/x-icon">
+    <title>Enchanted Lavender Spa</title>
+</head>
+
+<body class="bg-purple  text-white  overflow-x-hidden">
+    <!-- Header -->
+    <header
+        class="h-20 border-b border-rose flex items-center fixed z-[100] top-0 left-0 right-0 w-full bg-white backdrop-blur-xl">
+        <!-- Navber -->
+        <nav class="container flex justify-between items-center gap-5">
+            <!-- Navber Link -->
+            <ul class="gap-5 items-center hidden sm:flex">
+                <li><a href="#" class="text-rose hover:text-violet transition duration-300 ease-in-out">Home</a></li>
+                <li><a href="#about" class="text-rose hover:text-violet transition duration-300 ease-in-out">About</a>
+                </li>
+                <li><a href="#services"
+                        class="text-rose hover:text-violet transition duration-300 ease-in-out">Services</a></li>
+                <li><a href="#shop" class="text-rose hover:text-violet transition duration-300 ease-in-out">Shop</a>
+                </li>
+            </ul>
+            <!-- Navber Logo -->
+            <a href="#" class="text-md font-semibold text-rose  flex flex-col">Enchanted<span
+                    class="text-2xl font-mono : Dancing Script flex flex-row items-center text-violet text">
+                    <div class="w-5 h-5 m-0 p-0"><img src="./assets/images/lavender.png" alt="Lavender"
+                            class="w-full h-full object-fit-cover"> </div> lavender
+                </span> <span class="text-md ">Spa</span></a>
+            <!-- Navber Link -->
+            <ul class="gap-5 items-center hidden sm:flex text-rose ">
+                <li><a href="https://www.facebook.com/" target="_blank"
+                        class="hover:text-violet transition duration-300"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-facebook">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"
+                        class="hover:text-violet transition duration-300"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-instagram">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                        </svg></a></li>
+                <li><a href="https://www.pinterest.com/" target="_blank"
+                        class="hover:text-violet transition duration-300"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z" />
+                        </svg></a></li>
+                <li>
+                    <a href="#appointment"
+                        class="bg-rose text-white px-3 py-2 rounded-full text-md hover:bg-violet transition duration-500 ease-in-out">Appointment</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+    <!-- Main -->
+    <main>
+        <!-- Hero -->
+        <section class="h-[calc(100vh-0.1rem)] bg-no-repeat bg-center bg-cover relative "
+            style="background-image: url(./assets/images/bg5.jpg); ">
+            <div
+                class="absolute top-0 left-0 right-0 bottom-0 w-full h-full bg-gradient-to-t from-black/75 to-transparent z-[1]">
+            </div>
+            <!-- Content -->
+            <div
+                class="w-full h-full z-[2] container py-20 flex flex-col items-center justify-center gap-5 text-center relative">
+                <h1 class="text-3xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-semibold max-w-2xl">
+                    Nurture Your Mind , Body & Spirit
+                </h1>
+                <p class="text-white max-w-xl">
+                    Achieve the relaxation and rejuvenation you desire. It,s an atmosphere that is relaxing,
+                    comfortable, and inviting. Enchanted Lavender Spa provides a high-quality experience for there
+                    clients.
+                </p>
+                <a href="#appointment"
+                    class="bg-violet text-white px-5 py-3 rounded-full font-medium hover:bg-sky transition duration-300 ease-in-out">Make
+                    an Appointment</a>
+                <!-- SCROLL DOWN BUTTON -->
+                <a href="#services"
+                    class="absolute left-1/2 -translate-x-1/2 bottom-10 flex flex-col gap-2.5 items-center text-white">
+                    <span>Scroll Down</span>
+                    <span class="animate-bounce">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-mouse">
+                            <rect x="5" y="2" width="14" height="20" rx="7" />
+                            <path d="M12 6v4" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section id="about" class="h-[calc(100vh-5rem)] pt-20 backdrop-blur-xl">
+            <div class="container grid grid-cols-2  justify-between items-center  text-center gap-5  ">
+                <div class=" items-center justify-center text-center w-full h-full">
+                    <h3 class="text-6xl py-10 max-w-lg align-items-start">A Curated Combination of <span
+                            class="font-serif: Great Vibes text-fuchsia ">Art</span> &
+                        <span class="text-fuchsia">Wellbeing</span>
+                    </h3>
+                </div>
+                <div class="max-w-xl  mt-20 text-2xl">
+                    <p>Would you love it if your body is enveloped in aromatic flower petals or even dark chocolate?
+                        Want your body rubbed with powdered with exotic pearls or comforting jade stones? Mmm... You
+                        earnestly deserve such pampering! The Enchanted Lavender Spa beauty treatments consist of
+                        numerous kinds
+                        of massages, facials, essential oil treatment, body wraps, waxing, exfoliation, steam baths,
+                        saunas, mud bath, hot spring, aromatherapy, yoga, meditation and dietary consultation.</p>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute left-0 -translate-y-20"><img src="./assets/images/images__2_-removebg-preview.png"
+                        alt="" class=""></div>
+            </div>
+        </section>
+        <!-- Services -->
+        <section id="services" class=" w-full h-full  bg-gradient-to-tl from-violet to-rose">
+            <div class="py-20 ">
+                <!-- Section Title-->
+                <div class="container text-center flex flex-col items-center gap-1.5 mb-10">
+                    <span class="uppercase text-gray font-semibold tracking-widest">Our popular services</span>
+                    <h3 class="text-4xl font-medium max-w-md">
+                        Memorable Beauty Experience
+                    </h3>
+                </div>
+                <div class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+                    <!-- Populer Services 1 -->
+                    <div class="flex flex-col gap-2.5 items-center text-center">
+                        <div class="w-20 h-20 overflow-hidden">
+                            <img src="./assets/images/popular-service-1.png" alt="PS 1"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <h5 class="text-2xl underline decoration-wavy">Essential Oils</h5>
+                        <p>
+                            We chose only natural products for our procidure.
+                        </p>
+                    </div>
+                    <!-- Populer Services 2 -->
+                    <div class="flex flex-col gap-2.5 items-center text-center ">
+                        <div class="w-20 h-20 overflow-hidden">
+                            <img src="./assets/images/popular-service-2.png" alt="PS 1"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <h5 class="text-2xl underline decoration-wavy ">Rehabilitation</h5>
+                        <p>
+                            Recovery after injuries surgeries and sports events.
+                        </p>
+                    </div>
+                    <!-- Populer Services 3 -->
+                    <div class="flex flex-col gap-2.5 items-center text-center">
+                        <div class="w-20 h-20 overflow-hidden">
+                            <img src="./assets/images/popular-service-3.png" alt="PS 1"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <h5 class="text-2xl underline decoration-wavy">Spa Procedures</h5>
+                        <p>
+                            Special treatments for your skin and body.
+                        </p>
+                    </div>
+                    <!-- Populer Services 4 -->
+                    <div class="flex flex-col gap-2.5 items-center text-center">
+                        <div class="w-20 h-20 overflow-hidden">
+                            <img src="./assets/images/popular-service-4.png" alt="PS 1"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <h5 class="text-2xl underline decoration-wavy">Relax Massage</h5>
+                        <p>
+                            The best place for relax and get rid of stress and anxity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Service Banner -->
+            <div class="py-20">
+                <div class="container  relative flex items-center justify-center gap-10 flex-wrap">
+                    <!-- Banner -->
+                    <div class="w-[20rem] h-[20rem] overflow-hidden ">
+                        <img src="./assets/images/pexels-photo-2373201.jpeg" alt="Service banner"
+                            class="w-full h-full object-fit-cover rounded-3xl" />
+                    </div>
+                    <!-- CTA -->
+                    <div
+                        class="absolute -top-10 right-[15%] w-[20rem] h-[15rem] bg-gradient-to-tr from-rose to-fuchsia backdrop-blur-xl text-white p-10 flex flex-col gap-5 items-start justify-center rounded-3xl">
+                        <h5 class="text-2xl">Relax now!</h5>
+                        <p>Forget the problems and enjoy every moment at our spa.</p>
+                        <a href="#services"
+                            class="bg-transparent text-white px-5 py-3 rounded-full font-medium border-2 border-white hover:bg-sky/70 transition duration-300 ease-in-out inline-block">Our
+                            Services</a>
+                    </div>
+                    <!-- HOURS -->
+                    <div
+                        class="absolute -bottom-10 left-[15%] w-[20rem] h-[15rem] bg-sky/60 backdrop-blur-xl p-10 flex flex-col justify-center items-start text-white gap-5 rounded-3xl">
+                        <h5 class="text-2xl">Open hours</h5>
+                        <p>Welcome to our amazing spa!</p>
+                        <ul class="pl-7">
+                            <li class="list-disc">Fri: Closed</li>
+                            <li class="list-disc">Sat-Mon: 10AM - 6PM</li>
+                            <li class="list-disc">Tue-Thu: 10AM - 8PM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
