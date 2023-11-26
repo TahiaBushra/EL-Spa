@@ -148,7 +148,7 @@
         </section>
         <!-- About Section -->
         <section id="about" class="h-[calc(100vh-5rem)] pt-20 backdrop-blur-xl">
-            <div class="container grid grid-cols-2  justify-between items-center  text-center gap-5  ">
+            <div class="container grid grid-cols-1 md:grid-cols-2 justify-between items-center  text-center gap-5  ">
                 <div class=" items-center justify-center text-center w-full h-full">
                     <h3 class="text-6xl py-10 max-w-lg align-items-start">A Curated Combination of <span
                             class="font-serif: Great Vibes text-fuchsia ">Art</span> &
@@ -166,9 +166,9 @@
                     </p>
                 </div>
             </div>
-            <div class="relative">
-                <div class="absolute left-0 -translate-y-20"><img src="./assets/images/images__2_-removebg-preview.png"
-                        alt="" class=""></div>
+            <div class="xl:relative">
+                <div class="xl:absolute left-0 -translate-y-20"><img
+                        src="./assets/images/images__2_-removebg-preview.png" alt="" class=""></div>
             </div>
         </section>
         <!-- Services -->
@@ -230,7 +230,7 @@
             </div>
             <!-- Service Banner -->
             <div class="py-20">
-                <div class="container  relative flex items-center justify-center gap-10 flex-wrap">
+                <div class="container  xl:relative flex items-center justify-center gap-10 flex-wrap">
                     <!-- Banner -->
                     <div class="w-[20rem] h-[20rem] overflow-hidden ">
                         <img src="./assets/images/pexels-photo-2373201.jpeg" alt="Service banner"
@@ -238,7 +238,7 @@
                     </div>
                     <!-- CTA -->
                     <div
-                        class="absolute -top-10 right-[15%] w-[20rem] h-[15rem] bg-gradient-to-tr from-rose to-fuchsia backdrop-blur-xl text-white p-10 flex flex-col gap-5 items-start justify-center rounded-3xl">
+                        class="xl:absolute -top-10 right-[15%] w-[20rem] h-[15rem] bg-gradient-to-tr from-rose to-fuchsia backdrop-blur-xl text-white p-10 flex flex-col gap-5 items-start justify-center rounded-3xl">
                         <h5 class="text-2xl">Relax now!</h5>
                         <p>Forget the problems and enjoy every moment at our spa.</p>
                         <a href="#services"
@@ -247,7 +247,7 @@
                     </div>
                     <!-- HOURS -->
                     <div
-                        class="absolute -bottom-10 left-[15%] w-[20rem] h-[15rem] bg-sky/60 backdrop-blur-xl p-10 flex flex-col justify-center items-start text-white gap-5 rounded-3xl">
+                        class="xl:absolute -bottom-10 left-[15%] w-[20rem] h-[15rem] bg-sky/60 backdrop-blur-xl p-10 flex flex-col justify-center items-start text-white gap-5 rounded-3xl">
                         <h5 class="text-2xl">Open hours</h5>
                         <p>Welcome to our amazing spa!</p>
                         <ul class="pl-7">
@@ -260,14 +260,14 @@
             </div>
         </section>
         <!-- Price Section -->
-        <section id="prices" class=" h-[calc(100vh-5rem)] py-20 relative bg-gradient-to-br from-sky/20 to-sky/100 ">
+        <section id="prices" class=" h-[calc(100vh-5rem)] py-20 xl:relative bg-gradient-to-br from-sky/20 to-sky/100 ">
             <div class="container text-center flex flex-col items-center gap-1.5 mb-10">
                 <span class="uppercase text-white font-semibold ">Service plans</span>
                 <h3 class="text-4xl font-medium max-w-lg tracking-wide">Special Pricing</h3>
             </div>
 
             <!-- Price Wrapper -->
-            <div class="container grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
+            <div class="container grid grid-cols-1 md:grid-cols-2 gap-5  md:gap-10">
                 <!-- Left Grid Items -->
                 <div class="flex flex-col gap-5">
                     <!-- Item 1 -->
@@ -383,10 +383,10 @@
             </div>
 
             <!-- Leaf -->
-            <div class="absolute left-0 bottom-0 w-80 h-80 opacity-10">
+            <div class="xl:absolute left-0 bottom-0 w-80 h-80 opacity-10">
                 <img src="./assets/images/monstera.png" alt="Monstera" />
             </div>
-            <div class="absolute right-0 bottom-0 w-[15rem] h-[10rem] opacity-[10] ">
+            <div class="xl:absolute right-0 bottom-0 w-[15rem] h-[10rem] opacity-[10] ">
                 <img src="./assets/images/sr2.png" alt="Essential Oils">
             </div>
         </section>
@@ -461,6 +461,27 @@
                 </button>
             </div>
         </section>
+        <!-- Appoinment -->
+        <section id="appointment" class="h-[60vh] bg-no-repeat bg-center bg-cover bg-fixed relative"
+            style="background-image: url(./assets/images/bg-image3.jpg)">
+            <!-- Overlay -->
+            <div
+                class="absolute top-0 left-0 right-0 bottom-0 w-full h-full bg-gradient-to-t from-black/75 to-transparent z-[1]">
+            </div>
+
+            <!-- Contents -->
+            <div
+                class="w-full h-full z-[2] container py-20 flex flex-col items-center justify-center gap-5 text-center relative">
+                <span class="uppercase text-white font-semibold tracking-widest">Our Special Offer</span>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-semibold max-w-5xl">
+                    An Incredible Spa Experience
+                </h1>
+                <a href="#appointment"
+                    class="bg-violet text-white px-5 py-3 rounded-full font-medium hover:bg-sky transition duration-300 ease-in-out">Make
+                    an Appointment</a>
+            </div>
+        </section>
+        <!-- Location -->
         <section id="location"
             class="h-[30vh] bg-gradient-to-tl from-violet to-rose border-8 border-sky/50 items-center ">
             <div class="container grid grid-cols-2 gap-5 ">
